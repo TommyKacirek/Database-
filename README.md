@@ -1,32 +1,28 @@
 # DatabaseApplication
 Project application linked to the database
 
-## To build&run the project
-Enter the following command in the project root directory to build the project.
+DB app with GUI
+## To build and run
+Entre these commands in project root directory to build.
 ```shell
 $ mvn clean install
 ```
-
-Run the project:
+The next step is to launch this project
 ```shell
-$ java -jar target/bds-javafx-training-1.0.0.jar
+$ java -jar .\target\Library-1.0.0.jar
 ```
 
-Run the project with externalized `application.properties`:
+You can also start an extra project with `application.properties`
 ```shell
-$ java -jar target/bds-javafx-training-1.0.0.jar "./etc/application.properties"
+$ java -jar .\target\Library-1.0.0.jar "./etc/application.properties"
 ```
+Sign-in instructions:
+- Username: `Mirabalar@seznam.cz`
+- Password: `heslo`
 
-The `application.properties` file can be located in any place on the system that the application can access.
-
-Sign-in with the following credentials:
-- Username: `radek.kruta@seznam.cz`
-- Password: `batman`
-
-## To generate the project and external libraries licenses
-Enter the following command in the project root directory
+Used dependencies are stored on the git in a folder "dependencies"
+You can also get them by typing 
 ```shell
 $ mvn project-info-reports:dependencies
 ```
 
-The licenses info and documentation will be located in the `target/site` folder.
